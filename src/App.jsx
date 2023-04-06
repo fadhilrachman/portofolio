@@ -20,32 +20,36 @@ function App() {
         <div className="bg-negro h-[120vh] sm:h-[97vh] "></div>
         <div className="bg-bule h-6"></div>
       </div>
-      <div className="absolute w-full top-0 py-6 px-10">
+      <div className="absolute w-full top-0 py-6 px-10" id="home">
         <div className="text-white   flex justify-between  items-center">
           <p>MyPorto</p>
           <ul className=" text-1xl flex items-center">
-            <li className="mx-2 px-4 py-2 bg rounded hover:bg-bule hover:cursor-pointer hover:text-black transition-colors ease-out duration-500">
-              Home
-            </li>
-            <li className="mx-2 px-4 py-2 bg rounded hover:bg-bule hover:cursor-pointer hover:text-black transition-colors ease-out duration-500">
-              Service
-            </li>
-            <li className="mx-2 px-4 py-2 bg rounded hover:bg-bule hover:cursor-pointer hover:text-black transition-colors ease-out duration-500">
-              About
-            </li>
+            <Link to="home" smooth duration={400}>
+              <li className="mx-2 px-4 py-2 bg rounded hover:bg-bule hover:cursor-pointer hover:text-black transition-colors ease-out duration-500">
+                Home
+              </li>
+            </Link>
+
+            <Link to="skill" smooth duration={400}>
+              <li className="mx-2 px-4 py-2 bg rounded hover:bg-bule hover:cursor-pointer hover:text-black transition-colors ease-out duration-500">
+                skill
+              </li>
+            </Link>
             <Link to="portofolio" smooth duration={400}>
               <li className="mx-2 px-4 py-2 bg rounded hover:bg-bule hover:cursor-pointer hover:text-black transition-colors ease-out duration-500">
                 Portofolio
               </li>
             </Link>
-            <li className="mx-2 px-4 py-2 bg rounded hover:bg-bule hover:cursor-pointer hover:text-black transition-colors ease-out duration-500">
-              Contact
-            </li>
+            <Link to="contact" smooth duration={400}>
+              <li className="mx-2 px-4 py-2 bg rounded hover:bg-bule hover:cursor-pointer hover:text-black transition-colors ease-out duration-500">
+                Contact
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="flex flex-col items-center md:flex-none md:items-start text-center md:text-left mt-44">
           <h1 className="text-bule text-6xl font-semibold">
-            Fullstack Developer
+            Frontend Developer
           </h1>
           <h1 className="text-white mt-8 text-6xl font-semibold">
             Fadhil Rahman
@@ -70,7 +74,7 @@ function App() {
         </div>
       </div>
       <div
-        className="flex flex-col items-center  w-full mt-52 sm:mt-20 mb-20"
+        className="flex flex-col items-center  w-full pt-52 sm:pt-20 mb-20"
         id="portofolio"
       >
         <div>
@@ -117,7 +121,7 @@ function App() {
         </div>
       </div>
       <div className="bg-bule h-6"></div>
-      <div className="flex justify-center bg-negro py-20">
+      <div className="flex justify-center bg-negro py-20" id="skill">
         <div className=" w-full ">
           <h1 className="text-bule text-5xl font-semibold  text-center mb-10  ">
             My Skill
@@ -163,7 +167,7 @@ function App() {
         </div>
       </div>
       <div className="bg-bule h-6"></div>
-      <div className="w-full mt-20 mb-20">
+      <div className="w-full pt-20 mb-20" id="contact">
         <h1 className="text-5xl text-center text-negro font-semibold">
           Contact
         </h1>
@@ -218,18 +222,26 @@ function App() {
           <div className="mt-8">
             <h1 className="text-3xl font-medium">Tautan</h1>
             <ul>
-              <li className="my-2 hover:text-bule hover:cursor-pointer">
-                Home
-              </li>
-              <li className="my-2 hover:text-bule hover:cursor-pointer">
-                Portofolio
-              </li>
-              <li className="my-2 hover:text-bule hover:cursor-pointer">
-                Skill
-              </li>
-              <li className="my-2 hover:text-bule hover:cursor-pointer">
-                Contact
-              </li>
+              <Link to="home" smooth duration={400}>
+                <li className="my-2 hover:text-bule hover:cursor-pointer">
+                  Home
+                </li>
+              </Link>
+              <Link to="portofolio" smooth duration={400}>
+                <li className="my-2 hover:text-bule hover:cursor-pointer">
+                  Portofolio
+                </li>
+              </Link>
+              <Link to="skill" smooth duration={400}>
+                <li className="my-2 hover:text-bule hover:cursor-pointer">
+                  Skill
+                </li>
+              </Link>
+              <Link to="contact" smooth duration={400}>
+                <li className="my-2 hover:text-bule hover:cursor-pointer">
+                  Contact
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
