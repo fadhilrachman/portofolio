@@ -7,17 +7,22 @@ import proj1 from "./asset/proj1.svg";
 import instagram from "./asset/instagram.avif";
 import github from "./asset/github.png";
 import gitlab from "./asset/gitlab.svg";
+import fishlog from "./asset/fishlog.png";
+import { Link } from "react-scroll";
 
 function App() {
+  const handleWa = () => {
+    window.open("https://wa.me/0881022077883");
+  };
   return (
-    <div className="b">
-      <div className="h-screen rounded-bl-full  ">
-        <div className="bg-negro  " style={{ height: "97vh" }}></div>
+    <div className="b w-screen">
+      <div className="h-screen rounded-bl-full  w-screen">
+        <div className="bg-negro h-[120vh] sm:h-[97vh] "></div>
         <div className="bg-bule h-6"></div>
       </div>
       <div className="absolute w-full top-0 py-6 px-10">
         <div className="text-white   flex justify-between  items-center">
-          <div>Ini logo</div>
+          <p>MyPorto</p>
           <ul className=" text-1xl flex items-center">
             <li className="mx-2 px-4 py-2 bg rounded hover:bg-bule hover:cursor-pointer hover:text-black transition-colors ease-out duration-500">
               Home
@@ -28,9 +33,11 @@ function App() {
             <li className="mx-2 px-4 py-2 bg rounded hover:bg-bule hover:cursor-pointer hover:text-black transition-colors ease-out duration-500">
               About
             </li>
-            <li className="mx-2 px-4 py-2 bg rounded hover:bg-bule hover:cursor-pointer hover:text-black transition-colors ease-out duration-500">
-              Portofolio
-            </li>
+            <Link to="portofolio" smooth duration={400}>
+              <li className="mx-2 px-4 py-2 bg rounded hover:bg-bule hover:cursor-pointer hover:text-black transition-colors ease-out duration-500">
+                Portofolio
+              </li>
+            </Link>
             <li className="mx-2 px-4 py-2 bg rounded hover:bg-bule hover:cursor-pointer hover:text-black transition-colors ease-out duration-500">
               Contact
             </li>
@@ -44,36 +51,58 @@ function App() {
             Fadhil Rahman
           </h1>
           <p className="mt-5 text-white w-6/6 md:w-6/12 ">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-            molestias cupiditate aliquid, harum labore accusamus nam veniam, id
-            inventore esse necessitatibus illo.
+            My name is Muhammad Fadhil Rahman I am 19 years old, I entered the
+            world of technology since August 2021, I am a graduate of an eduwork
+            bootcamp, there I studied MERN stack besides that I have 5 months
+            experience as a frontend
           </p>
-          <button className="mt-5 rounded py-2 px-5 w-40 text- bg-bule text-negro">
-            Download CV
-          </button>
+          <div className="">
+            <button
+              className="mt-5 rounded py-2 px-5 w-40 text- bg-bule text-negro"
+              onClick={handleWa}
+            >
+              Contact me
+            </button>{" "}
+            <button className="mt-5 ml-3 rounded py-2 px-5 w-40 text- bg-bule text-negro">
+              Download CV
+            </button>
+          </div>
         </div>
       </div>
-      <div className="flex flex-col items-center  w-full mt-20 mb-20">
+      <div
+        className="flex flex-col items-center  w-full mt-52 sm:mt-20 mb-20"
+        id="portofolio"
+      >
         <div>
           <h1 className="text-5xl text-negro font-bold">Portofolio</h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2   gap-10 mt-10 w-full text-negro">
-          <div className="relative  flex mx-auto flex-col items-left  ">
-            <img src={proj1} alt="" className="w-96  h-60" />
+          <div className="  flex mx-auto flex-col items-left  relative">
+            <img src={proj1} alt="" className="w-96  h-60 " />
+            <div className="w-max px-2 mb-2 rounded bg-negro text-white">
+              <small>Real Project</small>
+            </div>
             <div className="bg-black h-48 opacity-30 w-96 top-6  absolute "></div>
-            <h1 className="text-2xl font-medium text-left">Agrinesia</h1>
+            <h1 className="text-2xl font-medium text-left">
+              Agrinesia Dashboard
+            </h1>
             <p className="w-96 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur id beatae eligendi ab? Beatae, repellat.
+              Creating a Dashboard for a cake company, made with the react js
+              library with the css framework ant design and redux-saga state
+              management
             </p>
           </div>
           <div className="relative  flex mx-auto flex-col items-left  ">
-            <img src={proj1} alt="" className="w-96  h-60" />
+            <img src={fishlog} alt="" className="w-96 h-60 py-6   " />
+            <div className="w-max px-2 mb-2 rounded bg-negro text-white">
+              <small>Real Project</small>
+            </div>
             <div className="bg-black h-48 opacity-30 w-96 top-6  absolute "></div>
-            <h1 className="text-2xl font-medium text-left">Agrinesia</h1>
+            <h1 className="text-2xl font-medium text-left">Fishlog</h1>
             <p className="w-96 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur id beatae eligendi ab? Beatae, repellat.
+              Creating a Dashboard for a fish company, made with the react js
+              library with the css framework bootstrap and redux-saga state
+              management
             </p>
           </div>
           <div className="relative  flex mx-auto flex-col items-left  ">
@@ -182,6 +211,7 @@ function App() {
             <h1 className="text-3xl font-medium">Unity Building</h1>
             <p className="text-2xl mt-4">Hubungi Saya</p>
             <p className="font-light mt-3">muhfadhilrachman@gmail.com</p>
+            <p className="font-light mt-3">+62 881-022-07883</p>
             <p className="font-light ">Jl.Pahlawan No.32,</p>
             <p className="font-light ">Garut</p>
           </div>
