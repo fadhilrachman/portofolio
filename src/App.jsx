@@ -49,16 +49,17 @@ function App() {
         </div>
         <div className="flex flex-col items-center md:flex-none md:items-start text-center md:text-left mt-44">
           <h1 className="text-bule text-6xl font-semibold">
-            Frontend Developer
+            Software engineer
           </h1>
           <h1 className="text-white mt-8 text-6xl font-semibold">
             Fadhil Rahman
           </h1>
           <p className="mt-5 text-white w-6/6 md:w-6/12 ">
-            My name is Muhammad Fadhil Rahman I am 19 years old, I entered the
-            world of technology since August 2021, I am a graduate of an eduwork
-            bootcamp, there I studied MERN stack besides that I have 5 months
-            experience as a frontend
+            Saya adalah seorang junior Software engineer. saya mulai belajar
+            tentang progarmming sejak 2021. Saya memiliki pengelaman kerja
+            sebagai React JS Developer selama 5 bulan. Saya juga belajar
+            mengenai MERN, (MongoDB, ExpressJs, ReactJS dan NodeJs) selama 4
+            bulan di Eduwork.id
           </p>
           <div className="">
             <button
@@ -128,6 +129,34 @@ function App() {
           </h1>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10">
             <div className=" px-7  hover:cursor-pointer  items-center flex flex-col ">
+              <img
+                src="https://miro.medium.com/v2/resize:fit:792/1*lJ32Bl-lHWmNMUSiSq17gQ.png"
+                alt=""
+                className="h-12 w-h-12"
+              />
+              <p className=" font-semibold mt-3 text-2xl text-bule">
+                HTML & CSS
+              </p>
+              <p className="text-center text-white text-1xl font-light">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Officiis, adipisci.
+              </p>
+            </div>
+            <div className=" px-7  hover:cursor-pointer  items-center flex flex-col ">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png"
+                alt=""
+                className="h-12 w-h-12"
+              />
+              <p className=" font-semibold mt-3 text-2xl text-bule">
+                Tailwind CSS
+              </p>
+              <p className="text-center text-white text-1xl font-light">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Officiis, adipisci.
+              </p>
+            </div>
+            <div className=" px-7  hover:cursor-pointer  items-center flex flex-col ">
               <img src={Js} alt="" className="h-12 w-h-12" />
               <p className=" font-semibold mt-3 text-2xl text-bule">
                 Javascript
@@ -146,6 +175,18 @@ function App() {
               </p>
             </div>
             <div className=" px-7 hover:text-bule hover:cursor-pointer  items-center flex flex-col ">
+              <img
+                src="https://cdn.zapier.com/storage/blog/4ec8fc7dc3a75758a3913bab9e5a4fd8_2.500x278.png"
+                alt=""
+                className="h-12 w-h-12"
+              />
+              <p className=" font-semibold mt-3 text-2xl text-bule">Redux</p>
+              <p className="text-center text-white text-1xl font-light">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Officiis, adipisci.
+              </p>
+            </div>
+            <div className=" px-7 hover:text-bule hover:cursor-pointer  items-center flex flex-col ">
               <img src={nodejs} alt="" className="h-12 w-h-12" />
               <p className=" font-semibold mt-3 text-2xl text-bule">Node Js</p>
               <p className="text-center text-white text-1xl font-light">
@@ -153,11 +194,37 @@ function App() {
                 Officiis, adipisci.
               </p>
             </div>
-            <div className=" px-7 hover:text-bule hover:cursor-pointer  lg:col-start-2  items-center flex flex-col ">
+            <div className=" px-7 hover:text-bule hover:cursor-pointer    items-center flex flex-col ">
               <img src={Express} alt="" className="h-12 w-h-12" />
               <p className=" font-semibold mt-3 text-2xl text-bule">
                 Express Js
               </p>
+              <p className="text-center text-white text-1xl font-light">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Officiis, adipisci.
+              </p>
+            </div>
+            <div className=" px-7 hover:text-bule hover:cursor-pointer    items-center flex flex-col ">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
+                alt=""
+                className="h-12 w-h-12"
+              />
+              <p className=" font-semibold mt-3 text-2xl text-bule">
+                Typescript
+              </p>
+              <p className="text-center text-white text-1xl font-light">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Officiis, adipisci.
+              </p>
+            </div>
+            <div className=" px-7 hover:text-bule hover:cursor-pointer    items-center flex flex-col ">
+              <img
+                src="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2019/07/image2-1.png?fit=600%2C315&ssl=1"
+                alt=""
+                className="h-12 w-h-12"
+              />
+              <p className=" font-semibold mt-3 text-2xl text-bule">SQL</p>
               <p className="text-center text-white text-1xl font-light">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Officiis, adipisci.
@@ -248,15 +315,26 @@ function App() {
         <hr className="border-white mx-5" />
         <div className="flex mt-20 justify-center">
           <div className="flex justify-center">
-            <div className="border border-white  hover:bg-bule hover:cursor-pointer rounded-full flex mx-3 p-4">
-              <img src={instagram} alt="" srcset="" className="h-6" />
-            </div>
-            <div className="border border-white mx-3 hover:bg-bule hover:cursor-pointer rounded-full flex  p-4">
-              <img src={github} alt="" srcset="" className="h-6" />
-            </div>
-            <div className="border border-white mx-3 hover:bg-bule hover:cursor-pointer rounded-full p-4">
-              <img src={gitlab} alt="" srcset="" className="h-6" />
-            </div>
+            <a href="https://www.linkedin.com/in/fadhil-rahman-856096247/">
+              <div className="border border-white  hover:bg-bule hover:cursor-pointer rounded-full flex mx-3 p-4">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/LinkedIn_logo_In-Black.svg/1200px-LinkedIn_logo_In-Black.svg.png"
+                  alt=""
+                  srcset=""
+                  className="h-6"
+                />
+              </div>
+            </a>
+            <a href="https://github.com/fadhilrachman">
+              <div className="border border-white mx-3 hover:bg-bule hover:cursor-pointer rounded-full flex  p-4">
+                <img src={github} alt="" srcset="" className="h-6" />
+              </div>
+            </a>
+            <a href="https://gitlab.com/muhfadhilrachman">
+              <div className="border border-white mx-3 hover:bg-bule hover:cursor-pointer rounded-full p-4">
+                <img src={gitlab} alt="" srcset="" className="h-6" />
+              </div>
+            </a>
           </div>
         </div>
         <div className="w-full  text-center mt-3">
