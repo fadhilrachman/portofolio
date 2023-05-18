@@ -4,7 +4,6 @@ import Express from "./asset/express.svg";
 import react from "./asset/react.svg";
 import nodejs from "./asset/nodejs.png";
 import proj1 from "./asset/proj1.svg";
-import instagram from "./asset/instagram.avif";
 import github from "./asset/github.png";
 import gitlab from "./asset/gitlab.svg";
 import fishlog from "./asset/fishlog.png";
