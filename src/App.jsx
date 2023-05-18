@@ -55,10 +55,10 @@ function App() {
             Fadhil Rahman
           </h1>
           <p className="mt-5 text-white w-6/6 md:w-6/12 ">
-            Saya adalah seorang junior Software engineer. saya mulai belajar
-            tentang progarmming sejak 2021. Saya memiliki pengelaman kerja
-            sebagai React JS Developer selama 5 bulan. Saya juga belajar
-            mengenai MERN, (MongoDB, ExpressJs, ReactJS dan NodeJs) selama 4
+            Saya seorang Junior Software Engineer dengan pengalaman belajar
+            programming sejak bulan Agustus 2021. Memiliki pengalaman kerja
+            sebagai React JS Developer selama 5 bulan. Juga lulusan bootcamp
+            fullstack MERN (MongoDB, ExpressJs, ReactJS, dan NodeJs) selama 4
             bulan di
             <a href="https://eduwork.id/" className="text-[#346eeb] underline">
               {" "}
