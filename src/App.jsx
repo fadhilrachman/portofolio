@@ -7,6 +7,7 @@ import proj1 from "./asset/proj1.svg";
 import github from "./asset/github.png";
 import gitlab from "./asset/gitlab.svg";
 import fishlog from "./asset/fishlog.png";
+import ecommerce from "./asset/ecommerce.png";
 import { Link } from "react-scroll";
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
           </ul>
         </div>
         <div className="flex flex-col items-center md:flex-none md:items-start text-center md:text-left mt-44">
-          <h1 className="text-bule text-6xl font-semibold">
+          <h1 className="text-bule text-6xl font-semibold ">
             Software engineer
           </h1>
           <h1 className="text-white mt-8 text-6xl font-semibold">
@@ -58,7 +59,11 @@ function App() {
             tentang progarmming sejak 2021. Saya memiliki pengelaman kerja
             sebagai React JS Developer selama 5 bulan. Saya juga belajar
             mengenai MERN, (MongoDB, ExpressJs, ReactJS dan NodeJs) selama 4
-            bulan di Eduwork.id
+            bulan di
+            <a href="https://eduwork.id/" className="text-[#346eeb] underline">
+              {" "}
+              Eduwork.id
+            </a>
           </p>
           <div className="">
             <button
@@ -81,42 +86,94 @@ function App() {
           <h1 className="text-5xl text-negro font-bold">Portofolio</h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2   gap-10 mt-10 w-full text-negro">
-          <div className="  flex mx-auto flex-col items-left  relative">
+          <div className="  flex mx-auto flex-col items-left  relative ">
             <img src={proj1} alt="" className="w-96  h-60 " />
             <div className="w-max px-2 mb-2 rounded bg-negro text-white">
-              <small>Real Project</small>
+              <small>Work</small>
             </div>
             <div className="bg-black h-48 opacity-30 w-96 top-6  absolute "></div>
+
             <h1 className="text-2xl font-medium text-left">
               Agrinesia Dashboard
             </h1>
+            <div className="flex justify-between">
+              <small>Sagara Technology</small>
+              <small>maret 2022 - agustus 2022</small>
+            </div>
+            <h3 className="mt-3 font-semibold">Jobdesk:</h3>
             <p className="w-96 ">
-              Creating a Dashboard for a cake company, made with the react js
-              library with the css framework ant design and redux-saga state
-              management
+              Membuat sebuah dashboard untuk mendata pembelian dan penjualan
+              perusahaan
             </p>
+            <div className="mt-3 ">
+              <span className="font-semibold">Stack : </span>
+              <span className="italic">
+                React Js, ANT Design, Redux Saga, Formik
+              </span>
+            </div>
           </div>
-          <div className="relative  flex mx-auto flex-col items-left  ">
-            <img src={fishlog} alt="" className="w-96 h-60 py-6   " />
-            <div className="w-max px-2 mb-2 rounded bg-negro text-white">
-              <small>Real Project</small>
+          <div className="  flex mx-auto flex-col items-left  relative ">
+            <img src={fishlog} alt="" className="w-96  h-48 mt-6 " />
+            <div className="w-max px-2 mb-2 mt-5 rounded bg-negro text-white">
+              <small>Work</small>
             </div>
             <div className="bg-black h-48 opacity-30 w-96 top-6  absolute "></div>
-            <h1 className="text-2xl font-medium text-left">Fishlog</h1>
+
+            <h1 className="text-2xl font-medium text-left">WMS Fishlog</h1>
+            <div className="flex justify-between">
+              <small>Sagara Technology</small>
+              <small>maret 2022 - agustus 2022</small>
+            </div>
+            <h3 className="mt-3 font-semibold">Jobdesk:</h3>
             <p className="w-96 ">
-              Creating a Dashboard for a fish company, made with the react js
-              library with the css framework bootstrap and redux-saga state
-              management
+              Slicing Design yang di sediakan ui/ux, dan mengintegrasikan api ke
+              dalam website
             </p>
+            <div className="mt-3 ">
+              <span className="font-semibold">Stack : </span>
+              <span className="italic">
+                React Js, Bootstrap, Redux Saga, React-Hook-Form
+              </span>
+            </div>
           </div>
-          <div className="relative  flex mx-auto flex-col items-left  ">
-            <img src={proj1} alt="" className="w-96  h-60" />
+          <div className="  flex mx-auto flex-col items-left  relative ">
+            <img src={ecommerce} alt="" className="w-96  h-48 mt-6 " />
+            <div className="w-max px-2 mb-2 mt-5 rounded bg-negro text-white">
+              <small>Bootcamp</small>
+            </div>
             <div className="bg-black h-48 opacity-30 w-96 top-6  absolute "></div>
-            <h1 className="text-2xl font-medium text-left">Agrinesia</h1>
+
+            <h1 className="text-2xl font-medium text-left">Ecommerce</h1>
+            <div className="flex justify-between">
+              <small>Eduwork</small>
+              <small>Mei 2023</small>
+            </div>
+            <h3 className="mt-3 font-semibold">Jobdesk:</h3>
             <p className="w-96 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur id beatae eligendi ab? Beatae, repellat.
+              Membuat Fullstack project berupa ecommerce dengan React sebagai
+              client side dan express sebagai server side
             </p>
+            <div className="mt-3 ">
+              <span className="font-semibold">Stack : </span>
+              <span className="italic">
+                React Js, Redux Toolkit, Express JS, MongoDB
+              </span>
+            </div>
+            <h3 className="mt-3">
+              <span className=" font-semibold">Source Code</span> :{" "}
+              <a
+                href="https://github.com/fadhilrachman/tugas_akhir_frontend"
+                className="text-[#346eeb] underline"
+              >
+                Frontend
+              </a>{" "}
+              <a
+                href="https://github.com/fadhilrachman/studi_kasus_mern"
+                className="text-[#346eeb] underline"
+              >
+                Backend
+              </a>
+            </h3>
           </div>
         </div>
       </div>
@@ -137,8 +194,8 @@ function App() {
                 HTML & CSS
               </p>
               <p className="text-center text-white text-1xl font-light">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officiis, adipisci.
+                Markup language dalam pengembangan web untuk membuat struktur,
+                konten, dan tampilan halaman dengan mudah
               </p>
             </div>
             <div className=" px-7  hover:cursor-pointer  items-center flex flex-col ">
@@ -151,8 +208,8 @@ function App() {
                 Tailwind CSS
               </p>
               <p className="text-center text-white text-1xl font-light">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officiis, adipisci.
+                Tailwind CSS adalah framework CSS yang memungkinkan pembuatan
+                desain web yang cepat dan efisien
               </p>
             </div>
             <div className=" px-7  hover:cursor-pointer  items-center flex flex-col ">
@@ -161,16 +218,16 @@ function App() {
                 Javascript
               </p>
               <p className="text-center text-white text-1xl font-light">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officiis, adipisci.
+                bahasa pemrograman web yang sering digunakan untuk membuat
+                halaman web interaktif, dan berinteraksi dengan server.
               </p>
             </div>
             <div className=" px-7 hover:text-bule hover:cursor-pointer  items-center flex flex-col ">
               <img src={react} alt="" className="h-12 w-h-12" />
               <p className=" font-semibold mt-3 text-2xl text-bule">React Js</p>
               <p className="text-center text-white text-1xl font-light">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officiis, adipisci.
+                Library JavaScript untuk membangun antarmuka pengguna yang
+                interaktif dan reusable
               </p>
             </div>
             <div className=" px-7 hover:text-bule hover:cursor-pointer  items-center flex flex-col ">
@@ -181,16 +238,17 @@ function App() {
               />
               <p className=" font-semibold mt-3 text-2xl text-bule">Redux</p>
               <p className="text-center text-white text-1xl font-light">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officiis, adipisci.
+                Library JavaScript untuk mengelola state aplikasi secara
+                terpusat dan diprediksi, memudahkan pengembangan aplikasi yang
+                skalabel dan mudah diuji
               </p>
             </div>
             <div className=" px-7 hover:text-bule hover:cursor-pointer  items-center flex flex-col ">
               <img src={nodejs} alt="" className="h-12 w-h-12" />
               <p className=" font-semibold mt-3 text-2xl text-bule">Node Js</p>
               <p className="text-center text-white text-1xl font-light">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officiis, adipisci.
+                Runtime lingkungan JavaScript yang berbasis server-side, dengan
+                menggunakan JavaScript di luar lingkungan browser
               </p>
             </div>
             <div className=" px-7 hover:text-bule hover:cursor-pointer    items-center flex flex-col ">
@@ -199,8 +257,8 @@ function App() {
                 Express Js
               </p>
               <p className="text-center text-white text-1xl font-light">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officiis, adipisci.
+                Kerangka kerja Node.js yang ringan dan mudah digunakan untuk
+                membangun aplikasi web dengan cepat
               </p>
             </div>
             <div className=" px-7 hover:text-bule hover:cursor-pointer    items-center flex flex-col ">
@@ -213,8 +271,7 @@ function App() {
                 Typescript
               </p>
               <p className="text-center text-white text-1xl font-light">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officiis, adipisci.
+                Peningkatan JavaScript dengan tipe statis.
               </p>
             </div>
             <div className=" px-7 hover:text-bule hover:cursor-pointer    items-center flex flex-col ">
@@ -225,8 +282,8 @@ function App() {
               />
               <p className=" font-semibold mt-3 text-2xl text-bule">SQL</p>
               <p className="text-center text-white text-1xl font-light">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officiis, adipisci.
+                Bahasa pemrograman khusus untuk mengelola dan mengakses basis
+                data relasional
               </p>
             </div>
           </div>

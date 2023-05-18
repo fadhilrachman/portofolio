@@ -2,7 +2,17 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        typing: "typing 1s steps(40) infinite",
+      },
+      keyframes: {
+        typing: {
+          "0%": { width: "0" },
+          "100%": { width: "100%" },
+        },
+      },
+    },
 
     colors: {
       transparent: "transparent",
