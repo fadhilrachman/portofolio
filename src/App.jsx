@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="b w-screen">
       <div className="h-screen rounded-bl-full  w-screen">
-        <div className="bg-negro h-[120vh] sm:h-[97vh] "></div>
+        <div className="bg-negro h-[137vh] sm:h-[97vh] "></div>
         <div className="bg-bule h-6"></div>
       </div>
       <div className="absolute w-full top-0 py-6 px-10" id="home">
@@ -79,7 +79,7 @@ function App() {
         </div>
       </div>
       <div
-        className="flex flex-col items-center  w-full pt-52 sm:pt-20 mb-20"
+        className="flex flex-col items-center  w-full pt-72 sm:pt-20 mb-20"
         id="portofolio"
       >
         <div>
